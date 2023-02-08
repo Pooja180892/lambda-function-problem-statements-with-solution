@@ -20,3 +20,28 @@ print(sorted(l,key=lambda x:x[1]))
 Write a Python program to sort a list of dictionaries using Lambda.
 dict=[{'make': 'Nokia', 'model': 216, 'color': 'Black'}, {'make': 'Mi Max', 'model': '2', 'color': 'Gold'}, {'make': 'Samsung', 'model': 7, 'color': 'Blue'}]
 print(sorted(dict,key= lambda x:x['color']))
+
+Write a Python program to square and cube every number in a given list of integers using Lambda.
+num=int(input('enter the no.'))
+res= lambda x:x**2
+val=lambda x:x**3
+print('square no.',res(num))
+print('cube no.',val(num))
+
+Write a Python program to find if a given string starts with a given character using Lambda.
+s=input('enter the string')
+res=lambda x:x.startswith('p')
+print(res(s))
+
+Write a Python program to extract year, month, date and time using Lambda.
+import datetime
+now = datetime.datetime.now()
+print(now)
+year = lambda x: x.year
+month = lambda x: x.month
+day = lambda x: x.day
+t = lambda x: x.time()
+print(year(now))
+print(month(now))
+print(day(now))
+print(t(now))
