@@ -74,3 +74,18 @@ l1=[1,2,3,4,5]
 l2=[5,6,7,8,9]
 res= lambda x,y:x+y
 print(list(map(res,l1,l2)))
+
+Write a Python program to find the values of length six in a given list using Lambda.
+l=['pooja R','prajwalita','sadiya','poonam','reva']
+res=lambda x:(len(x)==6)
+print(list(filter(res,l)))
+
+
+Write a Python program to find numbers divisible by nineteen or thirteen from a list of numbers using Lambda.(filter(res,l)))
+l=[19,38,12,13,26,35,67,89,65]
+print(list(filter(lambda x:(x%19==0) or (x%13==0),l)))
+
+Write a Python program to find palindromes in a given list of strings using Lambda.
+l=['madam','rar','pooja','nan']
+print(list(filter(lambda x:(x==''.join(reversed(x))),l)))
+
