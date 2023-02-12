@@ -45,3 +45,32 @@ print(year(now))
 print(month(now))
 print(day(now))
 print(t(now))
+
+Write a Python program to check whether a given string is number or not using Lambda.
+s=input('enter the string')
+res=lambda x:'is num' if x.isdigit() else 'not num'
+print(res(s))
+
+Write a Python program to find intersection of two given arrays using Lambda.
+l1=[1,2,3,4]
+l2=[2,3,4,5]
+res = lambda x:x in l1
+print(list(filter(res,l2)))
+
+Write a Python program to rearrange positive and negative numbers in a given array using Lambda.
+l1=[3,-1,5,6,-3,1,2]
+res=list(filter(lambda x:x>0,l1))
+res1=list(filter(lambda x:x<0,l1))
+result=((sorted(res))+(sorted(res1)))
+print(result)
+
+13.Write a Python program to count the even, odd numbers in a given array of integers using Lambda.
+l=[1,2,3,4,5,6,7,8,9]
+print('even count', len(list(filter(lambda x:( x%2==0 ),l))))
+print('odd count', len(list(filter(lambda x:( x%2!=0 ),l))))
+
+Write a Python program to add two given lists using map and lambda.
+l1=[1,2,3,4,5]
+l2=[5,6,7,8,9]
+res= lambda x,y:x+y
+print(list(map(res,l1,l2)))
