@@ -89,3 +89,8 @@ Write a Python program to find palindromes in a given list of strings using Lamb
 l=['madam','rar','pooja','nan']
 print(list(filter(lambda x:(x==''.join(reversed(x))),l)))
 
+Write a Python function to multiply all the numbers in a list.
+l=[1,2,3,4,5,6,7]
+from functools import reduce
+fun=lambda x,y:x*y
+reduce(fun,l)
