@@ -94,3 +94,15 @@ l=[1,2,3,4,5,6,7]
 from functools import reduce
 fun=lambda x,y:x*y
 reduce(fun,l)
+
+Sort a list of tuples by the second Item
+tp=[(3, 27),(1, 1), (2, 8),(4, 64)]
+result=sorted(tp,key=lambda x:x[1])
+print(result)
+
+Create a list of tuples from the given list having a number and its cube in each tuple
+lst=[1,2,3,4]
+result = [(i, i**3) for i in lst]
+print(result)   
+print(list(map(lambda x:(x,x**x),lst)))
+
